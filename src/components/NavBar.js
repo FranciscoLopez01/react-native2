@@ -3,9 +3,9 @@ import { Button } from "react-bootstrap";
 
 export default function App() {
   return (
-    <nav>
-      <div class="container">
-        <header class="d-flex justify-content-center py-3">
+    <header class="d-flex justify-content-center py-3">
+      <nav>
+        <div class="container">
           <ul class="nav nav-pills">
             <li class="nav-item">
               <a href="#" class="nav-link active" aria-current="page">
@@ -33,8 +33,11 @@ export default function App() {
               </a>
             </li>
           </ul>
-        </header>
-      </div>
-    </nav>
+        </div>
+        <div>
+          <CartWidget />
+        </div>
+      </nav>
+    </header>
   );
 }
